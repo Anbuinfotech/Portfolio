@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
+import { cardReveal, sectionReveal, sectionViewport, staggerContainer } from "./motion";
 
 const projects = [
   {
@@ -63,13 +65,13 @@ const Projects = () => {
     <section id="projects" className="py-24 bg-slate-50">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
-        <div className="text-center mb-14">
+        <motion.div initial="hidden" whileInView="visible" viewport={sectionViewport} variants={sectionReveal} className="text-center mb-14">
           <p className="text-brand font-bold tracking-[.18em] uppercase text-sm">Selected work</p>
           <h2 className="mt-3 text-4xl md:text-5xl font-extrabold tracking-tight">Featured Projects</h2>
           <p className="text-slate-500 mt-4 text-lg">
             Some of my recent projects.
           </p>
-        </div>
+        </motion.div>
 
         {/* Filter Buttons */}
         <div className="flex justify-center gap-4 mb-12 flex-wrap">
@@ -77,9 +79,10 @@ const Projects = () => {
         </div>
 
         {/* Cards */}
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+        <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={sectionViewport} className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+          <AnimatePresence mode="popLayout">
           {visibleProjects.map((project, index) => (
-            <div
+            <motion.div layout variants={cardReveal} initial="hidden" animate="visible" exit={{ opacity: 0, scale: 0.96, transition: { duration: 0.18 } }}
               key={index}
               className="group bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-2xl hover:shadow-indigo-100/70 hover:-translate-y-2 transition duration-300"
             >
@@ -152,9 +155,10 @@ const Projects = () => {
                   </a>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+          </AnimatePresence>
+        </motion.div>
       </div>
     </section>
   );

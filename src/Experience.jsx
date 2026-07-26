@@ -1,5 +1,7 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { FiBriefcase, FiCalendar, FiMapPin } from "react-icons/fi";
+import { sectionReveal, sectionViewport } from "./motion";
 
 const Experience = () => {
   return (
@@ -8,16 +10,16 @@ const Experience = () => {
       className="max-w-7xl mx-auto px-6 py-12"
     >
       {/* Heading */}
-      <div className="text-center mb-14">
+      <motion.div initial="hidden" whileInView="visible" viewport={sectionViewport} variants={sectionReveal} className="text-center mb-14">
         <p className="text-brand font-bold tracking-[.18em] uppercase text-sm">Career path</p>
         <h2 className="mt-3 text-4xl md:text-5xl font-extrabold tracking-tight">Experience</h2>
         <p className="text-gray-500 mt-4 text-lg">
           My professional journey and internship experience.
         </p>
-      </div>
+      </motion.div>
 
       {/* Experience Card */}
-      <div className="relative overflow-hidden bg-white border border-slate-100 rounded-3xl shadow-sm p-7 md:p-10 hover:shadow-xl hover:shadow-indigo-100/60 transition">
+      <motion.div initial="hidden" whileInView="visible" viewport={sectionViewport} variants={sectionReveal} whileHover={{ y: -5 }} className="relative overflow-hidden bg-white border border-slate-100 rounded-3xl shadow-sm p-7 md:p-10 hover:shadow-xl hover:shadow-indigo-100/60 transition">
         <div className="absolute right-0 top-0 h-28 w-28 rounded-bl-full bg-indigo-50"></div>
 
         {/* Top */}
@@ -132,7 +134,7 @@ const Experience = () => {
           </div>
         </div>
 
-      </div>
+      </motion.div>
     </section>
   );
 };

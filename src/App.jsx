@@ -1,4 +1,5 @@
 import React from 'react'
+import { MotionConfig } from 'framer-motion'
 import Navbar from './Navbar'
 import Hero from './Hero'
 import Experience from './Experience'
@@ -8,6 +9,7 @@ import Contact from './Contact'
 
 const App = () => {
   return (
+    <MotionConfig reducedMotion="user">
     <div className="page-shell">
     <Navbar></Navbar>
     <Hero></Hero>
@@ -16,6 +18,7 @@ const App = () => {
     <Projects></Projects> 
     <Contact></Contact>
     </div>
+    </MotionConfig>
   )
 }
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import {
   FiMapPin,
   FiMail,
@@ -7,6 +8,7 @@ import {
   FiLinkedin,
 } from "react-icons/fi";
 import Profile from "./assets/profile.jpeg";
+import { sectionReveal, staggerContainer } from "./motion";
 const Hero = () => {
   return (
     <section
@@ -14,27 +16,27 @@ const Hero = () => {
       className="section-grid relative min-h-[calc(100vh-80px)] flex items-center"
     >
       <div className="hero-glow absolute -right-40 top-0 h-[720px] w-[720px] rounded-full"></div>
-      <div className="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-16 items-center w-full relative">
+      <motion.div variants={staggerContainer} initial="hidden" animate="visible" className="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-16 items-center w-full relative">
         {/* Left Side */}
-        <div className="relative z-10">
+        <motion.div variants={staggerContainer} className="relative z-10">
           {/* Badge */}
-          <div className="reveal inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 border border-indigo-100 text-slate-700 shadow-sm">
+          <motion.div variants={sectionReveal} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 border border-indigo-100 text-slate-700 shadow-sm">
             <span className="w-2 h-2 bg-emerald-500 rounded-full pulse-ring"></span>
             Open to new opportunities
-          </div>
+          </motion.div>
 
           {/* Heading */}
-          <h1 className="reveal reveal-delay-1 mt-7 text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.05] text-slate-900">
+          <motion.h1 variants={sectionReveal} className="mt-7 text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.05] text-slate-900">
             Hi, I’m <span className="text-brand">Anbarasan</span>
-          </h1>
+          </motion.h1>
 
           {/* Role */}
-          <h2 className="reveal reveal-delay-1 mt-4 text-2xl md:text-3xl font-semibold text-slate-600">
+          <motion.h2 variants={sectionReveal} className="mt-4 text-2xl md:text-3xl font-semibold text-slate-600">
             Java Full Stack Developer
-          </h2>
+          </motion.h2>
 
           {/* Description */}
-          <p className="reveal reveal-delay-2 mt-7 text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl">
+          <motion.p variants={sectionReveal} className="mt-7 text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl">
             Passionate Full Stack Developer skilled in
             <span className="font-bold text-black">
               {" "}
@@ -42,10 +44,10 @@ const Hero = () => {
             </span>
             . I build responsive web applications with modern UI, REST APIs,
             authentication and scalable backend systems.
-          </p>
+          </motion.p>
 
           {/* Buttons */}
-          <div className="reveal reveal-delay-2 flex flex-wrap gap-4 mt-9">
+          <motion.div variants={sectionReveal} className="flex flex-wrap gap-4 mt-9">
             <a href="#contact" className="bg-brand text-white px-7 py-3.5 rounded-xl flex items-center gap-3 shadow-lg shadow-indigo-200 hover:bg-brand-dark hover:-translate-y-0.5 transition">
               <FiDownload />
               Download CV
@@ -55,10 +57,10 @@ const Hero = () => {
               <FiMail />
               Get In Touch
             </a>
-          </div>
+          </motion.div>
 
           {/* Social Icons */}
-          <div className="reveal reveal-delay-3 flex gap-4 mt-10">
+          <motion.div variants={sectionReveal} className="flex gap-4 mt-10">
             <a
               href="#"
               className="w-11 h-11 rounded-full border border-slate-200 bg-white flex items-center justify-center hover:bg-slate-900 hover:text-white hover:-translate-y-1 transition"
@@ -79,11 +81,11 @@ const Hero = () => {
             >
               <FiMail size={22} />
             </a>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
         {/* Right Side */}
-        <div className="reveal reveal-delay-2 flex justify-center lg:justify-end">
+        <motion.div variants={sectionReveal} className="flex justify-center lg:justify-end">
           <div className="relative w-[300px] h-[300px] sm:w-[400px] sm:h-[400px]">
             {/* Experience Badge */}
             <div className="float-slow absolute top-5 -right-4 z-10 bg-slate-900 text-white px-4 py-2 rounded-full shadow-xl font-semibold text-sm">
@@ -106,8 +108,8 @@ const Hero = () => {
               Fresher
             </div>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
     
   );

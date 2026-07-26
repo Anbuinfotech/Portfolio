@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import {
   FiCode,
   FiServer,
@@ -7,6 +8,7 @@ import {
   FiTool,
   FiGitBranch,
 } from "react-icons/fi";
+import { cardReveal, sectionReveal, sectionViewport, staggerContainer } from "./motion";
 
 const Skills = () => {
   const skillCategories = [
@@ -96,7 +98,7 @@ const Skills = () => {
       className="max-w-7xl mx-auto px-6 py-24"
     >
       {/* Heading */}
-      <div className="text-center mb-16">
+      <motion.div initial="hidden" whileInView="visible" viewport={sectionViewport} variants={sectionReveal} className="text-center mb-16">
         <p className="text-brand font-bold tracking-[.18em] uppercase text-sm">My toolkit</p>
         <h2 className="mt-3 text-4xl md:text-5xl font-extrabold tracking-tight">
           Skills & Technologies
@@ -105,13 +107,13 @@ const Skills = () => {
         <p className="text-gray-500 text-lg mt-4">
           Technologies and tools I use to build modern web applications.
         </p>
-      </div>
+      </motion.div>
 
       {/* Cards */}
-      <div className="grid lg:grid-cols-2 gap-8">
+      <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={sectionViewport} className="grid lg:grid-cols-2 gap-8">
 
         {skillCategories.map((category, index) => (
-          <div
+          <motion.div variants={cardReveal}
             key={index}
             className="group bg-white border border-slate-100 rounded-3xl p-8 shadow-sm hover:shadow-xl hover:shadow-indigo-100/60 hover:-translate-y-1 transition duration-300"
           >
@@ -143,10 +145,10 @@ const Skills = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
         ))}
 
-      </div>
+      </motion.div>
     </section>
   );
 };

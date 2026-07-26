@@ -1,9 +1,10 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { FiGithub, FiLinkedin, FiTwitter, FiSun } from "react-icons/fi";
 
 const Navbar = () => {
   return (
-    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-200/80">
+    <motion.header initial={{ y: -24, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: .5, ease: "easeOut" }} className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-200/80">
       <div className="max-w-7xl mx-auto flex items-center justify-between h-20 px-6">
         {/* Logo */}
         <a
@@ -63,7 +64,7 @@ const Navbar = () => {
           </button>
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 };
 

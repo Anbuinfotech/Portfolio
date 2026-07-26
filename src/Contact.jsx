@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import {
   FiMail,
   FiUser,
   FiMessageSquare,
   FiSend,
 } from "react-icons/fi";
+import { sectionReveal, sectionViewport } from "./motion";
 
 const Contact = () => {
   const [sent, setSent] = useState(false);
@@ -15,7 +17,7 @@ const Contact = () => {
       className="max-w-7xl mx-auto px-6 py-24"
     >
       {/* Heading */}
-      <div className="text-center mb-12">
+      <motion.div initial="hidden" whileInView="visible" viewport={sectionViewport} variants={sectionReveal} className="text-center mb-12">
         <p className="text-brand font-bold tracking-[.18em] uppercase text-sm">Let’s collaborate</p>
         <h2 className="mt-3 text-4xl md:text-5xl font-extrabold tracking-tight flex justify-center items-center gap-3">
           <FiMail />
@@ -25,10 +27,10 @@ const Contact = () => {
         <p className="text-gray-500 mt-4 text-lg">
           Let's connect! Feel free to send me a message.
         </p>
-      </div>
+      </motion.div>
 
       {/* Form Card */}
-      <div className="max-w-2xl mx-auto bg-white border border-slate-100 rounded-3xl shadow-xl shadow-indigo-100/50 p-8">
+      <motion.div initial="hidden" whileInView="visible" viewport={sectionViewport} variants={sectionReveal} className="max-w-2xl mx-auto bg-white border border-slate-100 rounded-3xl shadow-xl shadow-indigo-100/50 p-8">
 
         {/* Title */}
         <div className="flex items-center gap-4 mb-8">
@@ -97,7 +99,7 @@ const Contact = () => {
           {sent && <p className="text-center text-sm font-medium text-emerald-600">Thanks! Your message has been captured.</p>}
 
         </form>
-      </div>
+      </motion.div>
     </section>
   );
 };
