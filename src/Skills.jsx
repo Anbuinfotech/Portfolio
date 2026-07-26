@@ -1,0 +1,154 @@
+import React from "react";
+import {
+  FiCode,
+  FiServer,
+  FiDatabase,
+  FiMonitor,
+  FiTool,
+  FiGitBranch,
+} from "react-icons/fi";
+
+const Skills = () => {
+  const skillCategories = [
+    {
+      title: "Backend Development",
+      description: "Building secure and scalable backend applications",
+      icon: <FiServer size={28} />,
+      skills: [
+        "Core Java",
+        "Spring Boot",
+        "REST API",
+        "JDBC",
+        "Hibernate",
+        "SQL",
+      ],
+    },
+    {
+      title: "Frontend Development",
+      description: "Creating modern and responsive web interfaces",
+      icon: <FiMonitor size={28} />,
+      skills: [
+        "React.js",
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "Tailwind CSS",
+        "Responsive UI",
+      ],
+    },
+    {
+      title: "Database",
+      description: "Designing efficient database systems",
+      icon: <FiDatabase size={28} />,
+      skills: [
+        "MySQL",
+        "PostgreSQL",
+        "CRUD",
+        "Database Design",
+        "SQL Queries",
+        "Normalization",
+      ],
+    },
+    {
+      title: "Tools & Technologies",
+      description: "Development tools and version control",
+      icon: <FiTool size={28} />,
+      skills: [
+        "Git",
+        "GitHub",
+        "VS Code",
+        "Postman",
+        "Vite",
+        "npm",
+      ],
+    },
+    {
+      title: "Programming",
+      description: "Programming concepts and problem solving",
+      icon: <FiCode size={28} />,
+      skills: [
+        "OOP",
+        "Collections",
+        "Exception Handling",
+        "Multithreading",
+        "Java 8",
+        "DSA Basics",
+      ],
+    },
+    {
+      title: "Version Control",
+      description: "Managing projects efficiently",
+      icon: <FiGitBranch size={28} />,
+      skills: [
+        "Git",
+        "GitHub",
+        "Branching",
+        "Merge",
+        "Pull Request",
+        "Collaboration",
+      ],
+    },
+  ];
+
+  return (
+    <section
+      id="skills"
+      className="max-w-7xl mx-auto px-6 py-24"
+    >
+      {/* Heading */}
+      <div className="text-center mb-16">
+        <p className="text-brand font-bold tracking-[.18em] uppercase text-sm">My toolkit</p>
+        <h2 className="mt-3 text-4xl md:text-5xl font-extrabold tracking-tight">
+          Skills & Technologies
+        </h2>
+
+        <p className="text-gray-500 text-lg mt-4">
+          Technologies and tools I use to build modern web applications.
+        </p>
+      </div>
+
+      {/* Cards */}
+      <div className="grid lg:grid-cols-2 gap-8">
+
+        {skillCategories.map((category, index) => (
+          <div
+            key={index}
+            className="group bg-white border border-slate-100 rounded-3xl p-8 shadow-sm hover:shadow-xl hover:shadow-indigo-100/60 hover:-translate-y-1 transition duration-300"
+          >
+            {/* Title */}
+            <div className="flex items-center gap-5 mb-6">
+              <div className="w-14 h-14 rounded-2xl bg-indigo-50 text-brand flex items-center justify-center group-hover:bg-brand group-hover:text-white group-hover:rotate-3 transition">
+                {category.icon}
+              </div>
+
+              <div>
+                <h3 className="text-3xl font-bold">
+                  {category.title}
+                </h3>
+
+                <p className="text-gray-500 mt-1">
+                  {category.description}
+                </p>
+              </div>
+            </div>
+
+            {/* Skills */}
+            <div className="grid grid-cols-2 gap-4">
+              {category.skills.map((skill) => (
+                <div
+                  key={skill}
+                  className="bg-slate-50 rounded-xl px-5 py-4 font-medium text-slate-700 hover:bg-brand hover:text-white hover:shadow-lg hover:shadow-indigo-100 cursor-default transition"
+                >
+                  {skill}
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+
+      </div>
+    </section>
+  );
+};
+
+export default Skills;

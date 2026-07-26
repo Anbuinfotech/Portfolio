@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #111827;
+  --color-brand: #5b5bd6;
+  --color-brand-dark: #4141b8;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  color: #172033;
+  background: #f7f8fc;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+::selection { background: #c9caff; color: #171746; }
+
+.page-shell { overflow: hidden; }
+.section-grid {
+  background-image: linear-gradient(rgba(91, 91, 214, .055) 1px, transparent 1px), linear-gradient(90deg, rgba(91, 91, 214, .055) 1px, transparent 1px);
+  background-size: 42px 42px;
+}
+.hero-glow { background: radial-gradient(circle, rgba(123, 124, 244, .23) 0%, rgba(123, 124, 244, 0) 68%); }
+.glass-card { background: rgba(255,255,255,.78); backdrop-filter: blur(14px); }
+.reveal { animation: reveal .75s cubic-bezier(.2,.8,.2,1) both; }
+.reveal-delay-1 { animation-delay: .12s; }
+.reveal-delay-2 { animation-delay: .24s; }
+.reveal-delay-3 { animation-delay: .36s; }
+.float-slow { animation: float 5s ease-in-out infinite; }
+.float-reverse { animation: float 6s ease-in-out infinite reverse; }
+.pulse-ring { animation: pulse-ring 2.4s ease-out infinite; }
+.shimmer { background: linear-gradient(110deg, #f1f2ff 8%, #ffffff 18%, #f1f2ff 33%); background-size: 200% 100%; animation: shimmer 3s linear infinite; }
+
+@keyframes reveal { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-13px); } }
+@keyframes pulse-ring { 0% { box-shadow: 0 0 0 0 rgba(91,91,214,.35); } 70% { box-shadow: 0 0 0 13px rgba(91,91,214,0); } 100% { box-shadow: 0 0 0 0 rgba(91,91,214,0); } }
+@keyframes shimmer { to { background-position: -200% 0; } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; }
+}
