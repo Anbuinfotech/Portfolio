@@ -5,6 +5,25 @@ import { cardReveal, sectionReveal, sectionViewport, staggerContainer } from "./
 
 const projects = [
   {
+    title: "AI-Based Interview Preparation Platform",
+    category: "Full Stack",
+    image:
+      "https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=900&auto=format&fit=crop&q=80",
+    description:
+      "Developed an AI-powered web application that helps students and job seekers prepare for interviews by generating personalized interview questions and providing AI-based feedback on responses.",
+    tech: ["Next.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "AWS EC2"],
+    features: [
+      "Secure User Authentication",
+      "Interview Setup by Role, Type, and Difficulty",
+      "AI-Based Question Generation",
+      "AI Answer Evaluation",
+      "Performance Score and Feedback",
+      "Real-Time Interview Simulation",
+    ],
+    github: "https://github.com/",
+    live: "https://example.com",
+  },
+  {
     title: "Student Record Management",
     category: "Backend",
     image:

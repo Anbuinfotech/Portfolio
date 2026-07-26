@@ -14,15 +14,15 @@ const Skills = () => {
   const skillCategories = [
     {
       title: "Backend Development",
-      description: "Building secure and scalable backend applications",
+      description: "Building secure and scalable backend systems",
       icon: <FiServer size={28} />,
       skills: [
-        "Core Java",
+        "Java",
         "Spring Boot",
-        "REST API",
-        "JDBC",
-        "Hibernate",
-        "SQL",
+        "Spring MVC",
+        "Spring Security",
+        "REST APIs",
+        "JPA / Hibernate",
       ],
     },
     {
@@ -40,54 +40,54 @@ const Skills = () => {
     },
     {
       title: "Database",
-      description: "Designing efficient database systems",
+      description: "Designing efficient and reliable data layers",
       icon: <FiDatabase size={28} />,
       skills: [
-        "MySQL",
         "PostgreSQL",
-        "CRUD",
+        "MySQL",
+        "SQL",
+        "JDBC",
         "Database Design",
-        "SQL Queries",
-        "Normalization",
+        "CRUD Operations",
       ],
     },
     {
       title: "Tools & Technologies",
-      description: "Development tools and version control",
+      description: "Development tools and API testing workflows",
       icon: <FiTool size={28} />,
       skills: [
         "Git",
         "GitHub",
         "VS Code",
         "Postman",
-        "Vite",
-        "npm",
+        "Docker",
+        "Maven",
       ],
     },
     {
       title: "Programming",
-      description: "Programming concepts and problem solving",
+      description: "Core concepts and problem-solving for enterprise apps",
       icon: <FiCode size={28} />,
       skills: [
         "OOP",
         "Collections",
         "Exception Handling",
         "Multithreading",
-        "Java 8",
+        "Java 8+",
         "DSA Basics",
       ],
     },
     {
       title: "Version Control",
-      description: "Managing projects efficiently",
+      description: "Collaborating effectively in team-based development",
       icon: <FiGitBranch size={28} />,
       skills: [
         "Git",
         "GitHub",
         "Branching",
         "Merge",
-        "Pull Request",
-        "Collaboration",
+        "Pull Requests",
+        "CI/CD",
       ],
     },
   ];
@@ -105,7 +105,7 @@ const Skills = () => {
         </h2>
 
         <p className="text-gray-500 text-lg mt-4">
-          Technologies and tools I use to build modern web applications.
+          Core Java and full stack technologies I use to build scalable web applications.
         </p>
       </motion.div>
 

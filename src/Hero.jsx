@@ -27,7 +27,7 @@ const Hero = () => {
 
           {/* Heading */}
           <motion.h1 variants={sectionReveal} className="mt-7 text-5xl md:text-7xl font-extrabold tracking-tight leading-[1.05] text-slate-900">
-            Hi, I’m <span className="text-brand">Anbarasan</span>
+            Hi, I'm <span className="text-brand">Anbarasu</span>
           </motion.h1>
 
           {/* Role */}
@@ -48,7 +48,7 @@ const Hero = () => {
 
           {/* Buttons */}
           <motion.div variants={sectionReveal} className="flex flex-wrap gap-4 mt-9">
-            <a href="#contact" className="bg-brand text-white px-7 py-3.5 rounded-xl flex items-center gap-3 shadow-lg shadow-indigo-200 hover:bg-brand-dark hover:-translate-y-0.5 transition">
+            <a href="/Anbarasu.pdf" download className="bg-brand text-white px-7 py-3.5 rounded-xl flex items-center gap-3 shadow-lg shadow-indigo-200 hover:bg-brand-dark hover:-translate-y-0.5 transition">
               <FiDownload />
               Download CV
             </a>

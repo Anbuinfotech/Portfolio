@@ -11,8 +11,8 @@ const Navbar = () => {
           href="#home"
           className="text-3xl font-extrabold tracking-tight text-gray-900"
         >
-          <span className="text-brand">anbu</span>
-          <span className="text-slate-900">.dev</span>
+          <span className="text-brand">Portfolio</span>
+          
         </a>
 
         {/* Navigation */}
