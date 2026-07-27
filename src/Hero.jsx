@@ -89,7 +89,7 @@ const Hero = () => {
           <div className="relative w-[300px] h-[300px] sm:w-[400px] sm:h-[400px]">
             {/* Experience Badge */}
             <div className="float-slow absolute top-5 -right-4 z-10 bg-slate-900 text-white px-4 py-2 rounded-full shadow-xl font-semibold text-sm">
-              10+ Projects
+              5+ Projects
             </div>
 
             {/* Circle */}
