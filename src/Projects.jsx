@@ -21,7 +21,7 @@ const projects = [
       "Real-Time Interview Simulation",
     ],
     github: "https://github.com/",
-    live: "https://example.com",
+    live: "https://studentjobfinder.vercel.app/",
   },
   {
     title: "Student Record Management",
