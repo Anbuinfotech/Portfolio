@@ -12,7 +12,7 @@ const projects = [
     description:
       "Developed an AI-powered web application that helps students and job seekers prepare for interviews by generating personalized interview questions and providing AI-based feedback on responses.",
     tech: ["Next.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "AWS EC2"],
-    github: "https://github.com/",
+    github: "https://github.com/Anbuinfotech/Student_Job_Assistant",
     live: "https://studentjobfinder.vercel.app/",
   },
   {
@@ -45,8 +45,8 @@ const projects = [
     description:
       "Responsive portfolio website developed using React and Tailwind CSS.",
     tech: ["React", "Tailwind CSS", "JavaScript", "Vite"],
-    github: "https://github.com/",
-    live: "https://example.com",
+    github: "https://github.com/Anbuinfotech/Portfolio",
+    live: "https://anbuinfotech.vercel.app/",
   },
 ];
 

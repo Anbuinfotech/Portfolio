@@ -9,13 +9,13 @@
 :root {
   color-scheme: light;
   --bg: transparent;
-  --bg-base: transparent;
+  --bg-base: #f8fafc;
   --bg-glow-1: rgba(15, 23, 42, .04);
   --bg-glow-2: rgba(100, 116, 139, .04);
   --section-surface: transparent;
   --section-shadow: rgba(255, 255, 255, .42);
-  --text: #0f172a;
-  --text-muted: #546071;
+  --text: #111827;
+  --text-muted: #4b5563;
   --surface: rgba(255,255,255,.22);
   --surface-solid: rgba(255,255,255,.27);
   --surface-soft: rgba(255,255,255,.16);
@@ -76,7 +76,7 @@ html { scroll-behavior: smooth; }
 body {
   margin: 0;
   color: var(--text);
-  background: transparent;
+  background: var(--bg-base);
   font-family: Inter, ui-sans-serif, system-ui, sans-serif;
   transition: background-color .3s ease, color .3s ease;
   overflow-x: hidden;
@@ -180,6 +180,16 @@ body {
 .theme-hero-shell { background-color: var(--hero-card-bg); border: 1px solid var(--hero-card-border); color: var(--text); }
 .theme-hero-ring { background-color: var(--surface-solid); border: 1px solid var(--hero-card-border); }
 .theme-section-soft { background-color: var(--section-soft-bg); }
+:root:not([data-theme='dark']) h1 .hero-gradient-text {
+  background-image: linear-gradient(90deg, #2563eb 0%, #4f46e5 46%, #7c3aed 100%);
+}
+:root:not([data-theme='dark']) #home .theme-chip,
+:root:not([data-theme='dark']) #home .theme-hero-stat {
+  border-color: #7c3aed;
+}
+:root:not([data-theme='dark']) #home .theme-button-secondary:hover {
+  background-color: rgba(139, 92, 246, 0.06);
+}
 .reveal { animation: reveal .75s cubic-bezier(.2,.8,.2,1) both; }
 .reveal-delay-1 { animation-delay: .12s; }
 .reveal-delay-2 { animation-delay: .24s; }
@@ -287,6 +297,10 @@ body {
   background: radial-gradient(circle, rgba(139, 92, 246, .28) 0%, rgba(96, 165, 250, .16) 38%, rgba(255, 255, 255, 0) 70%);
   filter: blur(24px);
   animation: photo-glow 6.2s ease-in-out infinite;
+}
+:root:not([data-theme='dark']) .hero-photo-glow {
+  background: radial-gradient(circle, rgba(139, 92, 246, .18) 0%, rgba(96, 165, 250, .1) 38%, rgba(255, 255, 255, 0) 70%);
+  filter: blur(20px);
 }
 .hero-float-blob {
   width: 22rem;

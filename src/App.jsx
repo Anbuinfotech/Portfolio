@@ -30,18 +30,18 @@ const App = () => {
       <div className="app-canvas">
         <div className="lightfall-background" aria-hidden="true">
           <Lightfall
-            colors={isDark ? ['#7dd3fc', '#6366f1', '#f0abfc'] : ['#93c5fd', '#818cf8', '#f9a8d4']}
-            backgroundColor={isDark ? '#060816' : '#f4f6fb'}
+            colors={isDark ? ['#7dd3fc', '#6366f1', '#f0abfc'] : ['#93c5fd', '#818cf8', '#c4b5fd']}
+            backgroundColor={isDark ? '#060816' : '#f8fafc'}
             speed={0.32}
             streakCount={3}
             streakWidth={0.7}
             streakLength={1.35}
-            glow={0.85}
+            glow={isDark ? 0.85 : 0.6}
             density={0.72}
             twinkle={0.7}
             zoom={3.2}
-            backgroundGlow={0.16}
-            opacity={isDark ? 0.42 : 0.22}
+            backgroundGlow={isDark ? 0.16 : 0.11}
+            opacity={isDark ? 0.42 : 0.15}
             mouseInteraction={false}
           />
         </div>
