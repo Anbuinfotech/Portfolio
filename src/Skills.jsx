@@ -100,11 +100,11 @@ const Skills = () => {
       {/* Heading */}
       <motion.div initial="hidden" whileInView="visible" viewport={sectionViewport} variants={sectionReveal} className="text-center mb-16">
         <p className="text-brand font-bold tracking-[.18em] uppercase text-sm">My toolkit</p>
-        <h2 className="mt-3 text-4xl md:text-5xl font-extrabold tracking-tight">
+        <h2 className="mt-3 text-4xl md:text-5xl font-extrabold tracking-tight theme-text">
           Skills & Technologies
         </h2>
 
-        <p className="text-gray-500 text-lg mt-4">
+        <p className="theme-text-muted text-lg mt-4">
           Core Java and full stack technologies I use to build scalable web applications.
         </p>
       </motion.div>
@@ -115,20 +115,20 @@ const Skills = () => {
         {skillCategories.map((category, index) => (
           <motion.div variants={cardReveal}
             key={index}
-            className="group bg-white border border-slate-100 rounded-3xl p-8 shadow-sm hover:shadow-xl hover:shadow-indigo-100/60 hover:-translate-y-1 transition duration-300"
+            className="group theme-panel rounded-3xl p-8 shadow-sm hover:shadow-xl hover:shadow-indigo-100/60 hover:-translate-y-1 transition duration-300"
           >
             {/* Title */}
             <div className="flex items-center gap-5 mb-6">
-              <div className="w-14 h-14 rounded-2xl bg-indigo-50 text-brand flex items-center justify-center group-hover:bg-brand group-hover:text-white group-hover:rotate-3 transition">
+              <div className="w-14 h-14 rounded-2xl bg-[color:var(--pill-hover-bg)] text-brand flex items-center justify-center group-hover:bg-brand group-hover:text-white group-hover:rotate-3 transition">
                 {category.icon}
               </div>
 
               <div>
-                <h3 className="text-3xl font-bold">
+                <h3 className="text-3xl font-bold theme-text">
                   {category.title}
                 </h3>
 
-                <p className="text-gray-500 mt-1">
+                <p className="theme-text-muted mt-1">
                   {category.description}
                 </p>
               </div>
@@ -139,7 +139,7 @@ const Skills = () => {
               {category.skills.map((skill) => (
                 <div
                   key={skill}
-                  className="bg-slate-50 rounded-xl px-5 py-4 font-medium text-slate-700 hover:bg-brand hover:text-white hover:shadow-lg hover:shadow-indigo-100 cursor-default transition"
+                  className="theme-chip rounded-xl px-5 py-4 font-medium hover:bg-brand hover:text-white hover:shadow-lg hover:shadow-indigo-100 cursor-default transition"
                 >
                   {skill}
                 </div>
