@@ -38,7 +38,7 @@ const Navbar = ({ isDark, onToggleTheme }) => {
     };
   }, []);
 
-  const headerClasses = `sticky top-0 z-50 border-b transition-all duration-300 ${
+  const headerClasses = `fixed inset-x-0 top-0 z-50 border-b transition-all duration-300 ${
     scrolled
       ? "shadow-[0_10px_30px_rgba(15,23,42,0.08)] backdrop-blur-2xl theme-navbar"
       : "backdrop-blur-xl theme-navbar"
@@ -75,7 +75,7 @@ const Navbar = ({ isDark, onToggleTheme }) => {
 
         <div className="flex items-center gap-3">
           <motion.a
-            href="https://github.com/"
+            href="https://github.com/anbuinfotech"
             target="_blank"
             rel="noreferrer"
             whileHover={{ y: -2, scale: 1.05 }}
@@ -85,7 +85,7 @@ const Navbar = ({ isDark, onToggleTheme }) => {
           </motion.a>
 
           <motion.a
-            href="https://linkedin.com/"
+            href="https://www.linkedin.com/in/anbarasu-infotech"
             target="_blank"
             rel="noreferrer"
             whileHover={{ y: -2, scale: 1.05 }}
@@ -95,7 +95,7 @@ const Navbar = ({ isDark, onToggleTheme }) => {
           </motion.a>
 
           <motion.a
-            href="https://twitter.com/"
+            href="https://twitter.com/anbuinfotech"
             target="_blank"
             rel="noreferrer"
             whileHover={{ y: -2, scale: 1.05 }}

@@ -272,7 +272,7 @@ const Hero = () => {
               transition={{ duration: 0.75, delay: 0.25 }}
               className="hero-badge hero-badge-top absolute top-4 right-2 sm:top-8 sm:right-0 z-20 px-4 py-2 rounded-full font-semibold text-sm"
             >
-              5+ Projects
+              20+ Projects
             </motion.div>
 
             <div className="hero-blob absolute inset-[-10%] rounded-full" />

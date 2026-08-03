@@ -45,7 +45,7 @@ const App = () => {
             mouseInteraction={false}
           />
         </div>
-        <div className="page-shell">
+        <div className="page-shell pt-20">
         <Navbar isDark={isDark} onToggleTheme={() => setIsDark((value) => !value)} />
         <Hero />
         <Experience />

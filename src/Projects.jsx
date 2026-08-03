@@ -8,7 +8,7 @@ const projects = [
     title: "AI-Based Interview Preparation Platform",
     category: "Full Stack",
     image:
-      "https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=900&auto=format&fit=crop&q=80",
+      "/images/ai_interview.png",
     description:
       "Developed an AI-powered web application that helps students and job seekers prepare for interviews by generating personalized interview questions and providing AI-based feedback on responses.",
     tech: ["Next.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "AWS EC2"],
@@ -17,25 +17,25 @@ const projects = [
   },
   {
     title: "Student Record Management",
-    category: "Backend",
-    image:
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900&auto=format&fit=crop&q=80",
-    description:
-      "Built a Student Management System using Java, Spring Boot, MySQL and RESTful CRUD API",
-    tech: ["Java", "Spring Boot", "MySQL", "REST API"],
-    github: "https://github.com/",
-    live: "https://example.com",
-  },
-  {
-    title: "E-Commerce Website",
     category: "Full Stack",
     image:
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=900&auto=format&fit=crop&q=80",
+      "/images/student_record.png",
     description:
-      "Modern online shopping website with authentication, cart and product management.",
-    tech: ["React", "Node.js", "Express", "PostgreSQL"],
-    github: "https://github.com/",
-    live: "https://example.com",
+      "Built a full-stack Student Record Management System with React and Spring Boot, featuring secure CRUD operations and MySQL database integration.",
+    tech: ["Java", "Spring Boot","Spring Data JPA", "MySQL","React.js", "REST API"],
+    github: "https://github.com/Anbuinfotech/Student_Record_Management",
+    live: "https://student-record-management-sigma.vercel.app/",
+  },
+  {
+    title: "Aura Commerce",
+    category: "Full Stack",
+    image:
+      "/images/aura_commerce.png",
+    description:
+      "Built a full-stack e-commerce platform with secure authentication, product management, and a seamless shopping experience.",
+    tech: ["React.js","TypeScript", "Node.js", "Express.js", "MongoDB", "REST API"],
+    github: "https://github.com/Anbuinfotech/Aura_Commerce",
+    live: "https://aura-commerce.ai.studio/",
   },
   {
     title: "Personal Portfolio",
@@ -43,8 +43,8 @@ const projects = [
     image:
       "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&auto=format&fit=crop&q=80",
     description:
-      "Responsive portfolio website developed using React and Tailwind CSS.",
-    tech: ["React", "Tailwind CSS", "JavaScript", "Vite"],
+      "Built a modern and responsive portfolio website to showcase projects, skills, and experience with an engaging UI and optimized performance.",
+    tech: ["React.js", "Tailwind CSS", "JavaScript", "Vite","HTML5","CSS3"],
     github: "https://github.com/Anbuinfotech/Portfolio",
     live: "https://anbuinfotech.vercel.app/",
   },
