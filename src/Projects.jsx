@@ -41,12 +41,23 @@ const projects = [
     title: "Personal Portfolio",
     category: "Frontend",
     image:
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&auto=format&fit=crop&q=80",
+      "/images/portfolio.png",
     description:
       "Built a modern and responsive portfolio website to showcase projects, skills, and experience with an engaging UI and optimized performance.",
     tech: ["React.js", "Tailwind CSS", "JavaScript", "Vite","HTML5","CSS3"],
     github: "https://github.com/Anbuinfotech/Portfolio",
     live: "https://anbuinfotech.vercel.app/",
+  },
+  {
+    title: "Event Management System",
+    category: "Backend",
+    image:
+      "/images/event_management.png",
+    description:
+      "Built a secure backend application for managing events, user registrations, and role-based access using Java Spring Boot and PostgreSQL.",
+    tech: ["Java", "Spring Boot", "Spring Security", "PostgreSQL", "JWT Authentication", "JPA", "Maven", "swagger"],
+    github: "https://github.com/Anbuinfotech/Event_Management_System",
+    live: "https://eventmanagementsystem.ai.studio/",
   },
 ];
 
