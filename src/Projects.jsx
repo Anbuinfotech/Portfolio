@@ -38,15 +38,15 @@ const projects = [
     live: "https://aura-commerce.ai.studio/",
   },
   {
-    title: "Personal Portfolio",
+    title: "Job Tracker",
     category: "Frontend",
     image:
-      "/images/portfolio.png",
+      "/images/JobTracker.png",
     description:
-      "Built a modern and responsive portfolio website to showcase projects, skills, and experience with an engaging UI and optimized performance.",
-    tech: ["React.js", "Tailwind CSS", "JavaScript", "Vite","HTML5","CSS3"],
-    github: "https://github.com/Anbuinfotech/Portfolio",
-    live: "https://anbuinfotech.vercel.app/",
+      "Built a modern and responsive job tracking application to help users manage their job search activities and stay organized.",
+    tech: ["React.js", "Bootstrap", "JavaScript","HTML","CSS"],
+    github: "https://github.com/Anbuinfotech/JobTracker",
+    live: "https://job-tracker-pied-six-59.vercel.app/",
   },
   {
     title: "Event Management System",
