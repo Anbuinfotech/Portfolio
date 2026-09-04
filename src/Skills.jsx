@@ -18,11 +18,15 @@ const Skills = () => {
       icon: <FiServer size={28} />,
       skills: [
         "Java",
+        "J2EE",
+        "Spring",
         "Spring Boot",
         "Spring MVC",
         "Spring Security",
+        "ORM",
+        "Hibernate",
         "REST APIs",
-        "JPA / Hibernate",
+        "CRUD Operations"
       ],
     },
     {
@@ -30,12 +34,11 @@ const Skills = () => {
       description: "Creating modern and responsive web interfaces",
       icon: <FiMonitor size={28} />,
       skills: [
-        "React.js",
-        "JavaScript",
         "HTML5",
         "CSS3",
-        "Tailwind CSS",
-        "Responsive UI",
+        "Bootstrap",
+        "JavaScript",
+        "React.js"
       ],
     },
     {
@@ -43,12 +46,12 @@ const Skills = () => {
       description: "Designing efficient and reliable data layers",
       icon: <FiDatabase size={28} />,
       skills: [
-        "PostgreSQL",
-        "MySQL",
-        "SQL",
-        "JDBC",
-        "Database Design",
-        "CRUD Operations",
+          "MySQL",
+          "PostgreSQL",
+          "Oracle",
+          "SQL",
+          "JDBC",
+          "Database Design"
       ],
     },
     {
@@ -56,12 +59,12 @@ const Skills = () => {
       description: "Development tools and API testing workflows",
       icon: <FiTool size={28} />,
       skills: [
-        "Git",
-        "GitHub",
-        "VS Code",
-        "Postman",
-        "Docker",
-        "Maven",
+          "Eclipse",
+          "IntelliJ IDEA",
+          "VS Code",
+          "Postman",
+          "Maven",
+          "Docker",
       ],
     },
     {
@@ -70,11 +73,12 @@ const Skills = () => {
       icon: <FiCode size={28} />,
       skills: [
         "OOP",
-        "Collections",
+        "Collection Framework",
         "Exception Handling",
         "Multithreading",
+        "Logical Programming",
+        "DSA",
         "Java 8+",
-        "DSA Basics",
       ],
     },
     {
@@ -86,8 +90,8 @@ const Skills = () => {
         "GitHub",
         "Branching",
         "Merge",
+        "Merge Conflict Resolution",
         "Pull Requests",
-        "CI/CD",
       ],
     },
   ];
