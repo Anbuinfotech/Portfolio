@@ -266,14 +266,14 @@ const Hero = () => {
             onMouseMove={handlePointerMove}
             onMouseLeave={handlePointerLeave}
           >
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.75, delay: 0.25 }}
               className="hero-badge hero-badge-top absolute top-4 right-2 sm:top-8 sm:right-0 z-20 px-4 py-2 rounded-full font-semibold text-sm"
             >
               20+ Projects
-            </motion.div>
+            </motion.div> */}
 
             <div className="hero-blob absolute inset-[-10%] rounded-full" />
             <div className="hero-photo-glow absolute inset-[-8%] rounded-full" />
@@ -293,14 +293,14 @@ const Hero = () => {
               </motion.div>
             </div>
 
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.75, delay: 0.3 }}
               className="hero-badge hero-badge-bottom absolute bottom-5 left-2 sm:bottom-8 sm:left-0 z-20 px-4 py-2 rounded-full font-semibold text-sm"
             >
               Open to Work
-            </motion.div>
+            </motion.div> */}
           </div>
         </motion.div>
       </motion.div>
