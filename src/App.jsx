@@ -29,7 +29,7 @@ const App = () => {
     <MotionConfig reducedMotion="user">
       <div className="app-canvas">
         <div className="lightfall-background" aria-hidden="true">
-          <Lightfall
+          {/* <Lightfall
             colors={isDark ? ['#7dd3fc', '#6366f1', '#f0abfc'] : ['#93c5fd', '#818cf8', '#c4b5fd']}
             backgroundColor={isDark ? '#060816' : '#f8fafc'}
             speed={0.32}
@@ -43,7 +43,7 @@ const App = () => {
             backgroundGlow={isDark ? 0.16 : 0.11}
             opacity={isDark ? 0.42 : 0.15}
             mouseInteraction={false}
-          />
+          /> */}
         </div>
         <div className="page-shell pt-20">
         <Navbar isDark={isDark} onToggleTheme={() => setIsDark((value) => !value)} />

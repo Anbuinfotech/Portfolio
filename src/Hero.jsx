@@ -121,7 +121,7 @@ const Hero = () => {
         variants={staggerContainer}
         initial="hidden"
         animate="visible"
-        className="max-w-7xl mx-auto px-6 py-24 lg:py-28 grid lg:grid-cols-2 gap-16 lg:gap-20 items-center w-full relative"
+        className="max-w-7xl mx-auto px-6 py-24 lg:py-8 grid lg:grid-cols-2 gap-16 lg:gap-20 items-center w-full relative"
       >
         <motion.div variants={staggerContainer} className="relative z-10">
           <motion.div
@@ -275,14 +275,12 @@ const Hero = () => {
               20+ Projects
             </motion.div> */}
 
-            <div className="hero-blob absolute inset-[-10%] rounded-full" />
-            <div className="hero-photo-glow absolute inset-[-8%] rounded-full" />
             <div className="hero-orbit absolute inset-0 rounded-full flex items-center justify-center">
               <motion.div
-                animate={{ y: [0, -10, 0] }}
+                animate={{ y: [0, -6, 0] }}
                 transition={{ duration: 5.2, repeat: Infinity, ease: "easeInOut" }}
                 className="hero-photo-shell relative w-[82%] h-[82%] rounded-full overflow-hidden"
-                style={{ x: pointer.x * 8, y: pointer.y * 8 }}
+                style={{ x: pointer.x * 5, y: pointer.y * 5 }}
               >
                 <div className="absolute inset-0 hero-photo-backdrop" />
                 <img
@@ -293,14 +291,14 @@ const Hero = () => {
               </motion.div>
             </div>
 
-            {/* <motion.div
+            {/* {<motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.75, delay: 0.3 }}
               className="hero-badge hero-badge-bottom absolute bottom-5 left-2 sm:bottom-8 sm:left-0 z-20 px-4 py-2 rounded-full font-semibold text-sm"
             >
               Open to Work
-            </motion.div> */}
+            </motion.div>} */}
           </div>
         </motion.div>
       </motion.div>
